@@ -16,8 +16,15 @@ public class Game_Insults {
     "a nerd", "a lame-o", "a memer", 
     "garbage", "a pee-wee", "weak-sauce" 
     };
+    static String[] treasure = {
+    "crown","jewel","dank meme",
+    "sword","smelly sock","old shoe"
+    };
 
 public static String getInsult(){
-    return "You are " + insultArray[randy.nextInt(9)-1];
+    return "You are " + insultArray[randy.nextInt(9)-1/*1*/];
+}
+public static String treasureGen(){
+    return treasure[randy.nextInt(6)-1];
 }
 }
